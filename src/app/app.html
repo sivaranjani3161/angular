@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table class="border border-double border-grey-500">
+    <thead class="border border-grey-500">
+     <tr>
+<th class="border border-grey-500 px-4 py-2 bg-green-200">name</th>
+<th  class="border border-grey-500 px-4 py-2 bg-green-500">age</th>
+<th class="border border-grey-500 px-4 py-2">gender</th>
+
+     </tr>
+    </thead>
+    <tbody>
+<tr *ngFor="let item of user">
+  <td class="border border-grey-500 px-4 py-2">{{item.name}}</td>
+  <td class="border border-grey-500 px-4 py-2">{{item.age}}</td>
+  <td class="border border-grey-500 px-4 py-2">{{item.gender}}</td>
+</tr>
+
+
+    </tbody>
+
+    
+  </table>
+</body>
+</html>
